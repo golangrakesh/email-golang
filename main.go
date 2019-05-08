@@ -8,9 +8,9 @@ func init() {
 
 type Todo struct {
 	Id int32
-	Distributor string
+	Name string
 	Total int32
-	Punched int32
+	Complete int32
 	Pending int32 
 	Done  bool
 }
@@ -31,13 +31,13 @@ func main() {
 			Username:"Rakesh",
 			PageTitle: "My TODO list",
 			Todos: []Todo{
-				{Id:1, Distributor:"Rakesh ",Total:10,Punched:8,Pending:2,Done:false},
-				{Id:2, Distributor:"Kunal",Total:11,Punched:11,Pending:0,Done:false},
-				{Id:3, Distributor:"Dolly",Total:12,Punched:0,Pending:12,Done:false},
-				{Id:4, Distributor:"Ram ",Total:15,Punched:15,Pending:0,Done:false},
-				{Id:5, Distributor:"Ramesh ",Total:17,Punched:15,Pending:2,Done:false},
-				{Id:6, Distributor:"Amit ",Total:30,Punched:28,Pending:2,Done:false},
-				{Id:7, Distributor:"Aman ",Total:40,Punched:32,Pending:8,Done:false},
+				{Id:1, Name:"Rakesh ",Total:10,Complete:8,Pending:2,Done:false},
+				{Id:2, Name:"Kunal",Total:11,Complete:11,Pending:0,Done:false},
+				{Id:3, Name:"Dolly",Total:12,Complete:0,Pending:12,Done:false},
+				{Id:4, Name:"Ram ",Total:15,Complete:15,Pending:0,Done:false},
+				{Id:5, Name:"Ramesh ",Total:17,Complete:15,Pending:2,Done:false},
+				{Id:6, Name:"Amit ",Total:30,Complete:28,Pending:2,Done:false},
+				{Id:7, Name:"Aman ",Total:40,Complete:32,Pending:8,Done:false},
 				
 			},
 		}
