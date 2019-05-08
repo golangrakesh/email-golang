@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Shellocks Reports</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Muli|Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div style="display:block;margin:0 auto;width:600px;text-align: center; border:1px solid #ccc;padding: 20px;box-shadow: 0px 3px 5px 1px #B3B3B3;-webkit-box-shadow: 0px 3px 5px 1px #B3B3B3;-moz-box-shadow: 0px 3px 5px 1px #B3B3B3;-o-box-shadow: 0px 3px 5px 1px #B3B3B3;" id="emb-email-header">
+                <div>
+                    
+                    <h3 style="font-family: 'muli', sans-serif;font-weight: 600;font-size:28px;margin: 0;color:#000;">Daily Report Summary</h3>
+                    <table style="text-align: left;border:1px solid #ccc;width: 600px;border-collapse: collapse;margin: 20px 0;">
+                        <thead>
+                          <tr>
+                            <th style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Distributor Name</th>
+                            <th  style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Total Box</th>
+                            <th  style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Punched</th>
+                            <th  style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Pending</th>
+                            
+                          </tr>
+
+
+                        </thead>
+
+                        <tbody>
+                            {{range .Todos}}
+                            <tr style="border:1px solid #ccc;">
+                                
+                                <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;"> {{.Distributor}} </td>
+                            
+                                
+                                <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;"> {{.Total}}</td>
+                           
+                                
+                                <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;">{{.Punched}}</td>
+                           
+                                
+                                <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;">{{.Pending}}</td>
+                            </tr>
+                            {{end}}
+                             
+                        </tbody>
+                    </table>
+                   
+                </div>
+            </div>
+            </main>
+    </body>
+</html>
