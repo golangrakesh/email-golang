@@ -15,9 +15,9 @@
                     <table style="text-align: left;border:1px solid #ccc;width: 600px;border-collapse: collapse;margin: 20px 0;">
                         <thead>
                           <tr>
-                            <th style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Distributor Name</th>
-                            <th  style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Total Box</th>
-                            <th  style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Punched</th>
+                            <th style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;"> Name</th>
+                            <th  style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Total</th>
+                            <th  style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Complete</th>
                             <th  style="color:#14428d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;font-weight: 200;">Pending</th>
                             
                           </tr>
@@ -29,13 +29,13 @@
                             {{range .Todos}}
                             <tr style="border:1px solid #ccc;">
                                 
-                                <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;"> {{.Distributor}} </td>
+                                <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;"> {{.Name}} </td>
                             
                                 
                                 <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;"> {{.Total}}</td>
                            
                                 
-                                <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;">{{.Punched}}</td>
+                                <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;">{{.Complete}}</td>
                            
                                 
                                 <td style="color:#3d3d3d;font-size:18px;font-family: 'Roboto', sans-serif;padding: 5px 20px;border-right: 1px solid #ccc;">{{.Pending}}</td>
